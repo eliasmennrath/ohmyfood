@@ -1,0 +1,12 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 formation OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --no-comments ./sass/main.scss ./resources/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
