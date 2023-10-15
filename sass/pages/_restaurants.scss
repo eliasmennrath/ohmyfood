@@ -1,0 +1,23 @@
+.highlight {
+    width: 100vw;
+}
+
+.main {
+    width: 100vw;
+    background-color: $background-color;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    top: -100px;
+
+    &__name {
+        
+    }
+
+    h1 {
+        font-family: 'Shrikhand';
+        font-size: 2rem;
+        font-weight: normal;
+        // prise en compte du margin
+        display: inline-block;
+    }
+}

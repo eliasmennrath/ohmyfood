@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../resources/css/fonts.css">
+    <script src="https://kit.fontawesome.com/81a3c62e6b.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../resources/css/main.css">
     <link rel="stylesheet" href="../resources/css/restaurants.css">
 </head>
 <body>
-    <header>
-        <img src="resources/img/logo/ohmyfood.png" alt="Logo de ohmyfood">
-        <nav>
-            <i class="fa-solid fa-arrow-left"></i>
+    <header class="header flex-center">
+        <img src="../resources/img/logo/ohmyfood.png" alt="Logo de ohmyfood" class="header__logo">
+        <nav class="header__navbar">
+            <i class="fa-solid fa-arrow-left header__navbar__back"></i>
         </nav>
     </header>
 
-    <img src="../resources/img/restaurants/la_palette_du_gout.jpg" alt="Une photo d'un plat du restaurant La palette du goût">
 
-    <main>
-        <div>
+    <img class="highlight" src="../resources/img/restaurants/la_palette_du_gout.jpg" alt="Une photo d'un plat du restaurant La palette du goût">
+
+    <main class="main">
+        <div class="main__name">
             <h1>La palette du goût</h1>
-            <!-- coeur -->
+            <div class="heart">
+                <div class="heart__background"></div>
+                <div class="heart__border"></div>
+            </div>
         </div>
 
         <section>
@@ -121,28 +126,28 @@
         </section>
     </main>
 
-    <footer>
-        <img src="resources/img/logo/ohmyfood.png" alt="Logo de ohmyfood">
-        <ul>
-            <li>
-                <a href="">
+    <footer class="footer">
+        <a href="#" class="footer__title">ohmyfood</a>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="" class="footer__item__link">
                     <i class="fa-solid fa-utensils"></i>
                     <p>Proposer un restaurant</p>
                 </a>    
             </li>
-            <li>
-                <a href="">
+            <li class="footer__item">
+                <a href="" class="footer__item__link">
                     <i class="fa-solid fa-handshake-simple"></i>
                     <p>Devenir partenaire</p>
                 </a>
             </li>
-            <li>
-                <a href="">
+            <li class="footer__item">
+                <a href="" class="footer__item__link">
                     <p>Mentions légales</p>
                 </a>
             </li>
-            <li>
-                <a href="">
+            <li class="footer__item">
+                <a href="" class="footer__item__link">
                     <p>Contact</p>
                 </a>
             </li>

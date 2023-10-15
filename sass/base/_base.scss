@@ -21,15 +21,22 @@ html {
   box-sizing: inherit;
 }
 
-/**
- * Basic styles for links
- */
-a {
-  color: $brand-color;
-  text-decoration: none;
+body {
+  background-color: $background-color;
+}
 
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
-  }
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+
+.flex {
+  @include flex;
+}
+
+.flex-center {
+  @include flex;
+  justify-content: center;
+  align-items: center;  
 }

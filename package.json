@@ -4,7 +4,10 @@
   "description": "Projet 3 formation OpenClassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --no-comments ./sass/main.scss ./resources/css/main.css"
+    "sass-main": "sass --watch ./sass/main.scss ./resources/css/main.css",
+    "sass-home": "sass --watch ./sass/home.scss ./resources/css/home.css",
+    "sass-restaurants": "sass --watch ./sass/restaurants.scss ./resources/css/restaurants.css",
+    "watch": "npm-run-all --parallel sass-main sass-home sass-restaurants"
   },
   "keywords": [],
   "author": "",

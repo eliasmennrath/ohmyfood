@@ -1,0 +1,105 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the loader.
+// -----------------------------------------------------------------------------
+
+#loader {
+    display: none;
+
+    height: 100vh;
+    width: 100vw;
+    // display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #faf0ca;
+    // Animation ne fonctionne pas
+    // animation: hide_loader;
+    // animation-delay: 3s;
+    
+    .cup {
+        height: 210px;
+        width: 220px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(.5);
+        border: 10px solid #030303;
+        border-radius: 20px 20px 65px 65px;
+        background: url('../../resources/img/loader/coffee-img-1.svg'), url('../../resources/img/loader/coffee-img-2.svg');
+        background-position: 0 0, 0 0;
+        background-repeat: repeat-x;
+        animation: cofee 4s infinite linear;
+
+        &:before {
+            content: '';
+            height: 90px;
+            width: 60px;
+            border: 10px solid #030303;
+            position: absolute;
+            border-left: none;
+            right: -70px;
+            top: 30px;
+            border-radius: 0 30px 80px 0;
+        }
+
+        &:after {
+            content: '';
+            height: 10px;
+            width: 300px;
+            background-color: #030303;
+            position: absolute;
+            left: -45px;
+            bottom: -10px;
+            border-radius: 10px;
+        }
+
+        &__bubble {
+            width: 15px;
+            height: 15px;
+            background-color: #fbbe08;
+            border-radius: 50%;
+            position: absolute;
+            opacity: .6;
+            animation: bubbles forwards infinite;
+        }
+        &__bubble--1 {
+            left: 30px;
+            bottom: 10px;
+            animation-duration: 2.2s;
+            animation-delay: .5s;
+        }
+        &__bubble--2 {
+            left: 80px;
+            bottom: 35px;
+            animation-duration: 3s;
+            animation-delay: 1.2s;
+        }
+        &__bubble--3  {
+            left: 140px;
+            bottom: 25px;
+            animation-duration: 1.5s;
+        }
+    }
+}    
+
+@keyframes cofee {
+    100% {
+        background-position: -100% 0, -100% 0;
+    }
+}
+
+@keyframes bubbles {
+    100% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+}
+
+
+// Pourquoi ça ne fonctionne pas ??
+// @keyframes hide_loader {
+//     100% {
+//         display: none;
+//     }
+// }
