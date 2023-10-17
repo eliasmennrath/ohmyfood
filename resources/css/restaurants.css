@@ -8,12 +8,119 @@
   border-radius: 20px 20px 0 0;
   position: relative;
   top: -100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
 }
-.main h1 {
+.main__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.main__name h1 {
   font-family: "Shrikhand";
   font-size: 2rem;
   font-weight: normal;
   display: inline-block;
+}
+.main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+.main .section__title {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 0;
+}
+.main .section__title::after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 2px;
+  background-color: #99E2D0;
+}
+.main .article {
+  width: calc(100vw - 40px);
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+.main .article:hover .article__text {
+  width: calc(100% - 75px);
+}
+.main .article:hover .article__check {
+  right: 0;
+}
+.main .article__text {
+  width: 100%;
+  transition: 0.3s;
+  padding: 15px;
+}
+.main .article__text .article__title {
+  font-weight: 600;
+  margin: 0;
+}
+.main .article__text .article__title, .main .article__text .article__description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.main .article__text .article__details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+}
+.main .article__text .article__details p {
+  margin: 0;
+}
+.main .article__check {
+  height: 100%;
+  width: 75px;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -75px;
+  transition: 0.3s;
+}
+.main .article__check i {
+  background: white;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .article__check i::before {
+  color: #99E2D0;
+  font-size: 1.2rem;
+}
+.main .btn {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+footer {
+  position: relative;
+  top: -100px;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=restaurants.css.map */

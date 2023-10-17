@@ -641,6 +641,7 @@ body {
   width: 25px;
   height: 25px;
   transform: scale(1.2);
+  margin-right: 15px;
 }
 .heart__background {
   width: 100%;

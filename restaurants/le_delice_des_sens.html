@@ -5,144 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../resources/css/fonts.css">
+    <script src="https://kit.fontawesome.com/81a3c62e6b.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../resources/css/main.css">
     <link rel="stylesheet" href="../resources/css/restaurants.css">
 </head>
 <body>
-    <header>
-        <img src="resources/img/logo/ohmyfood.png" alt="Logo de ohmyfood">
-        <nav>
-            <i class="fa-solid fa-arrow-left"></i>
+    <header class="header flex-center">
+        <img src="../resources/img/logo/ohmyfood.png" alt="Logo de ohmyfood" class="header__logo">
+        <nav class="header__navbar">
+            <i class="fa-solid fa-arrow-left header__navbar__back"></i>
         </nav>
     </header>
 
-    <img src="../resources/img/restaurants/le_delice_des_sens.jpg" alt="Une photo d'un plat du restaurant Le délice des sens">
 
-    <main>
-        <div>
-            <h1>Le délice des sens</h1>
-            <!-- coeur -->
+    <img class="highlight" src="../resources/img/restaurants/la_palette_du_gout.jpg" alt="Une photo d'un plat du restaurant La palette du goût">
+
+    <main class="main">
+        <div class="main__name">
+            <h1>La palette du goût</h1>
+            <div class="heart">
+                <div class="heart__background"></div>
+                <div class="heart__border"></div>
+            </div>
         </div>
 
-        <section>
-            <h2>Entrées</h2>
+        <section class="entrances">
+            <h2 class="section__title">Entrées</h2>
 
-            <article>
-                <h3>Tartare de thon</h3>
-                <span>
-                    <p>Assaisonné au yuzu</p>
-                    <p>25€</p>
-                    <div></div>
-                </span>
+            <article class="article">
+                <div class="article__text">
+                    <h3 class="article__title">Tartare de thon</h3>
+                    <span class="article__details">
+                        <p class="article__description">Assaisonné au yuzu</p>
+                        <p class="article__price">25€</p>
+                    </span>
+                </div>
+                <div class="article__check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
             </article>
 
-            <article>
-                <h3>Bouchée de homard croustillant</h3>
-                <span>
-                    <p>Et sa farandole de petits légumes</p>
-                    <p>35€</p>
-                    <div></div>
-                </span>
+            <article class="article">
+                <div class="article__text">
+                    <h3 class="article__title">Bouchée de homard croustillant</h3>
+                    <span class="article__details">
+                        <p class="article__description">Et sa farandole de petits légumes</p>
+                        <p class="article__price">35€</p>
+                    </span>
+                </div>
+                <div class="article__check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
             </article>
 
-            <article>
-                <h3>Velouté de cèpes </h3>
-                <span>
-                    <p>Aux truffes</p>
-                    <p>20€</p>
-                    <div></div>
-                </span>
-            </article>
-        </section>
-
-
-        <section>
-            <h2>Plats</h2>
-
-            <article>
-                <h3>Poulet rôti aux herbes de Provence </h3>
-                <span>
-                    <p>Et sa crème de truffe</p>
-                    <p>40€</p>
-                    <div></div>
-                </span>
-            </article>
-
-            <article>
-                <h3>Langouste rôtie </h3>
-                <span>
-                    <p>Et ses légumes de saison</p>
-                    <p>35€</p>
-                    <div></div>
-                </span>
-            </article>
-
-            <article>
-                <h3>Côte de bœuf Angus</h3>
-                <span>
-                    <p>Et sa purée de panais</p>
-                    <p>44€</p>
-                    <div></div>
-                </span>
+            <article class="article">
+                <div class="article__text">
+                    <h3 class="article__title">Velouté de cèpes </h3>
+                    <span class="article__details">
+                        <p class="article__description">Aux truffes</p>
+                        <p class="article__price">20€</p>
+                    </span>
+                </div>
+                <div class="article__check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
             </article>
         </section>
 
 
         <section>
-            <h2>Desserts</h2>
+            <h2 class="section__title">Plats</h2>
 
-            <article>
-                <h3>Farandole de desserts</h3>
-                <span>
-                    <p>Du chef</p>
-                    <p>18€</p>
-                    <div></div>
-                </span>
+            <article class="article">
+                <div class="article__text">
+                    <h3 class="article__title">Poulet rôti aux herbes de Provence </h3>
+                    <span class="article__details">
+                        <p class="article__description">Et sa crème de truffe</p>
+                        <p class="article__price">40€</p>
+                    </span>
+                </div>
+                <div class="article__check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
             </article>
 
-            <article>
-                <h3>Crème brulée </h3>
-                <span>
-                    <p>Revisitée</p>
-                    <p>22€</p>
-                    <div></div>
-                </span>
+            <article class="article">
+                <div class="article__text">
+                    <h3 class="article__title">Langouste rôtie </h3>
+                    <span class="article__details">
+                        <p class="article__description">Et ses légumes de saison</p>
+                        <p class="article__price">35€</p>
+                    </span>
+                </div>
+                <div class="article__check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
             </article>
 
-            <article>
-                <h3>Tiramisu</h3>
-                <span>
-                    <p>À la noisette</p>
-                    <p>23€</p>
-                    <div></div>
-                </span>
+            <article class="article">
+                <div class="article__text">
+                    <h3 class="article__title">Côte de bœuf Angus </h3>
+                    <span class="article__details">
+                        <p class="article__description">Et sa purée de panais</p>
+                        <p class="article__price">44€</p>
+                    </span>
+                </div>
+                <div class="article__check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
             </article>
         </section>
+
+
+        <section>
+            <h2 class="section__title">Desserts</h2>
+
+            <article class="article">
+                <div class="article__text">
+                    <h3 class="article__title">Farandole de desserts</h3>
+                    <span class="article__details">
+                        <p class="article__description">Du chef</p>
+                        <p class="article__price">18€</p>
+                    </span>
+                </div>
+                <div class="article__check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article__text">
+                    <h3 class="article__title">Crème brulée</h3>
+                    <span class="article__details">
+                        <p class="article__description">Revisitée</p>
+                        <p class="article__price">22€</p>
+                    </span>
+                </div>
+                <div class="article__check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article__text">
+                    <h3 class="article__title">Tiramisu </h3>
+                    <span class="article__details">
+                        <p class="article__description">À la noisette</p>
+                        <p class="article__price">23€</p>
+                    </span>
+                </div>
+                <div class="article__check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </article>
+        </section>
+
+        <a href="" class="btn">Commander</a>
+
     </main>
 
-    <footer>
-        <img src="resources/img/logo/ohmyfood.png" alt="Logo de ohmyfood">
-        <ul>
-            <li>
-                <a href="">
+    <footer class="footer">
+        <a href="#" class="footer__title">ohmyfood</a>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="" class="footer__item__link">
                     <i class="fa-solid fa-utensils"></i>
                     <p>Proposer un restaurant</p>
                 </a>    
             </li>
-            <li>
-                <a href="">
+            <li class="footer__item">
+                <a href="" class="footer__item__link">
                     <i class="fa-solid fa-handshake-simple"></i>
                     <p>Devenir partenaire</p>
                 </a>
             </li>
-            <li>
-                <a href="">
+            <li class="footer__item">
+                <a href="" class="footer__item__link">
                     <p>Mentions légales</p>
                 </a>
             </li>
-            <li>
-                <a href="">
+            <li class="footer__item">
+                <a href="" class="footer__item__link">
                     <p>Contact</p>
                 </a>
             </li>
