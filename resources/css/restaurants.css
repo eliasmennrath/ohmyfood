@@ -14,6 +14,8 @@
   flex-direction: column;
   align-items: center;
   row-gap: 25px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 .main__name {
   display: flex;
@@ -25,7 +27,7 @@
   font-family: "Shrikhand";
   font-size: 2rem;
   font-weight: normal;
-  display: inline-block;
+  margin: 0;
 }
 .main section {
   display: flex;
@@ -115,12 +117,13 @@
 .main .btn {
   padding-left: 30px;
   padding-right: 30px;
+  margin-top: 20px;
 }
 
-footer {
+.footer {
   position: relative;
   top: -100px;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=restaurants.css.map */

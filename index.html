@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ohmyfood | Accueil</title>
 
     <script src="https://kit.fontawesome.com/81a3c62e6b.js" crossorigin="anonymous"></script>
 
@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="resources/css/home.css">
 </head>
 <body>
+
+    <!--  -->
     <div id="loader">
         <div class="cup">
             <div class="cup__bubble cup__bubble--1"></div>
@@ -19,12 +21,14 @@
         </div>
     </div>
 
-    <header class="header flex-center">
+    <a href="/Code/ohmyfood/index.html">
+        <header class="header flex-center">
         <img src="resources/img/logo/ohmyfood.png" alt="Logo de ohmyfood" class="header__logo">
         <nav class="header__navbar">
             <i class="fa-solid fa-arrow-left header__navbar__back"></i>
         </nav>
     </header>
+    </a>
 
     <form action="#" class="form flex-center">
         <i class="fa-solid fa-location-dot form__icon"></i>
@@ -64,43 +68,41 @@
     <section id="restaurants">
         <h2>Restaurants</h2>
 
-        <a href="restaurants/la_palette_du_gout.html" class="card">
+        <a href="restaurants/a_la_francaise.html" class="card">
             <img class="card__img" src="resources/img/restaurants/la_palette_du_gout.jpg" alt="Photo d'un plat du restaurant La palette du goût">
             <span class="card__content">
                 <span class="card__text">
                     <h3 class="card__title">La palette du goût</h3>
                     <p class="card__city">Ménilmontant</p>
                 </span>
-                <!-- coeur -->
-                <!-- <i class="fa-regular fa-heart card__like"></i> -->
-                <div class="heart heart-1"></div>
-                <div class="heart heart-2">
-                    <div class="heart__background"></div>   
+                <div class="heart">
+                    <div class="heart__background"></div>
+                    <div class="heart__border"></div>
                 </div>
             </span>
+            <span class="card__new">Nouveau</span>
         </a>
 
-        <a href="#" class="card">
+        <a href="restaurants/a_la_francaise.html" class="card">
             <img class="card__img" src="resources/img/restaurants/la_note_enchantee.jpg" alt="Image d'un plat du restaurant La note enchantée">
             <span class="card__content">
                 <span class="card__text">
                     <h3 class="card__title">La note enchantée</h3>
                     <p class="card__city">Charonne</p>
                 </span>
-                <!-- coeur -->
-                <div class="coeurs"
-                style="position: relative;">
-                    <i class="fa-regular fa-heart card__like" style="position: absolute;"></i>
-                    <i class="fa-solid fa-heart card__like" style="position: absolute;"></i>
+                <div class="heart">
+                    <div class="heart__background"></div>
+                    <div class="heart__border"></div>
                 </div>
             </span>
+            <span class="card__new">Nouveau</span>
         </a>
 
-        <a href="#" class="card">
+        <a href="restaurants/a_la_francaise.html" class="card">
             <img class="card__img" src="resources/img/restaurants/a_la_francaise.jpg" alt="Image d'un plat du restaurant A la française">
             <span class="card__content">
                 <span class="card__text">
-                    <h3 class="card__title">A la française</h3>
+                    <h3 class="card__title">À la française</h3>
                     <p class="card__city">Cité Rouge</p>
                 </span>
                 <div class="heart">
@@ -110,20 +112,22 @@
             </span>
         </a>
 
-        <article>
-            <a href="#" class="card">
-                <img class="card__img" src="resources/img/restaurants/le_delice_des_sens.jpg" alt="Photo d'un plat du restaurant Le délice des sens">
-                <span class="card__content--v2">
-                    <h3 class="card__title--v2">Le délice des sens</h3>
-                    <p class="card__city--v2">Folie-Méricourt</p>
+        <a href="restaurants/le_delice_des_sens.html" class="card">
+            <img class="card__img" src="resources/img/restaurants/le_delice_des_sens.jpg" alt="Photo d'un plat du restaurant Le délice des sens">
+            <span class="card__content">
+                <span class="card__text">
+                    <h3 class="card__title">Le délice des sens</h3>
+                    <p class="card__city">Folie-Méricourt</p>
                 </span>
-            </a>
-            <div class="heart">
-                <div class="heart__background"></div>
-                <div class="heart__border"></div>
-            </div>
-        </article>
+                <div class="heart">
+                    <div class="heart__background"></div>
+                    <div class="heart__border"></div>
+                </div>
+            </span>
+        </a>
     </section>
+
+
 
     <footer class="footer">
         <a href="#" class="footer__title">ohmyfood</a>

@@ -7,6 +7,9 @@
     background-color: #353535;
     color: #fff;
     padding-left: 25px;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     &__title {
         font-family: 'Shrikhand', sans-serif;
@@ -15,8 +18,10 @@
     &__list {
         @include flex;
         flex-direction: column;
-        row-gap: 1rem;
+        row-gap: 16px;
         padding: 0;
+        margin-bottom: 0;
+        margin-top: 30px;
     }
 
     &__item {

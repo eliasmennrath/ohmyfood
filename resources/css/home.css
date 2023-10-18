@@ -1,3 +1,7 @@
+.header__navbar {
+  display: none;
+}
+
 .form {
   background-color: #EAEAEA;
   width: 100%;
@@ -19,6 +23,7 @@ h1, .intro {
 h1 {
   font-size: 1.5rem;
   letter-spacing: -0.5px;
+  margin-top: 30px;
 }
 
 .intro {
@@ -32,9 +37,13 @@ h1 {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #fff;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.fonctionnement__h2 {
+.fonctionnement__title {
   width: 100%;
+  margin-top: 0;
 }
 .fonctionnement__list {
   display: flex;
@@ -85,9 +94,15 @@ h1 {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #f6f6f6;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
+}
+
+h2 {
+  margin: 0;
 }
 
 .card {
@@ -96,6 +111,17 @@ h1 {
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
+  position: relative;
+}
+.card__new {
+  position: absolute;
+  padding: 5px 10px;
+  top: 15px;
+  right: 15px;
+  background: #99E2D0;
+  border-radius: 3px;
+  color: #008766;
+  font-size: 0.9rem;
 }
 .card__img {
   width: 100%;
