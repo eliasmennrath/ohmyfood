@@ -7,7 +7,6 @@
     background-color: #353535;
     color: #fff;
     padding-left: 25px;
-    margin-top: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -35,6 +34,24 @@
             p {
                 margin: 0;
             }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        padding-right: 20px;
+        column-gap: 5%;
+
+        &__list {
+            flex-direction: row;
+            justify-content: flex-end;
+            column-gap: 25px;
         }
     }
 }

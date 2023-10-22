@@ -28,6 +28,7 @@ h1 {
 
 .intro {
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .fonctionnement {
@@ -79,7 +80,7 @@ h1 {
   align-items: center;
   column-gap: 1rem;
   padding: 10px 2rem;
-  width: 90%;
+  width: 100%;
   background-color: #f6f6f6;
   border-radius: 20px;
   height: 70px;
@@ -105,15 +106,20 @@ h2 {
   margin: 0;
 }
 
-.card {
+#cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+#cards .card {
   display: block;
-  width: calc(100vw - 40px);
+  width: 100%;
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
 }
-.card__new {
+#cards .card__new {
   position: absolute;
   padding: 5px 10px;
   top: 15px;
@@ -123,43 +129,67 @@ h2 {
   color: #008766;
   font-size: 0.9rem;
 }
-.card__img {
+#cards .card__img {
   width: 100%;
   height: 250px;
   object-fit: cover;
   display: block;
 }
-.card__content {
+#cards .card__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 15px 0;
   padding: 0 20px 0 10px;
 }
-.card__title {
+#cards .card__title {
   font-size: 20px;
   font-weight: 600;
   margin: 0;
 }
-.card__city {
+#cards .card__city {
   font-size: 18px;
   font-weight: 300;
   margin: 0;
 }
 
 @media screen and (min-width: 481px) {
-  .fonctionnement__list {
-    flex-direction: row;
-  }
-  .fonctionnement__list li {
-    width: 33.3333333333%;
+  h1 {
+    font-size: 2rem;
   }
   #restaurants {
+    justify-content: center;
+  }
+  #restaurants h2 {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+  }
+  #restaurants #cards {
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
   }
-  .card {
-    width: 50%;
+  #restaurants #cards .card {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .fonctionnement {
+    max-width: 1440px;
+    margin: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .fonctionnement__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .fonctionnement__list li {
+    width: 30%;
   }
 }
 
