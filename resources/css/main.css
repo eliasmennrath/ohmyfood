@@ -566,8 +566,7 @@ body {
   left: 0;
   bottom: 0;
   z-index: 9;
-  background-color: #faf0ca;
-  background-color: #faf0ca;
+  background-color: #99E2D0;
   animation-name: hide_loader;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -610,7 +609,7 @@ body {
 .loader .cup__bubble {
   width: 15px;
   height: 15px;
-  background-color: #fbbe08;
+  background-color: #9356DC;
   border-radius: 50%;
   position: absolute;
   opacity: 0;
