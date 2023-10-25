@@ -323,7 +323,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 a {
@@ -475,7 +475,7 @@ body {
 
 .header {
   cursor: default;
-  width: 100vw;
+  width: 100%;
   height: 75px;
   padding: 10px 0;
   position: relative;
@@ -559,14 +559,14 @@ body {
 }
 .loader {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   z-index: 9;
-  background-color: #99E2D0;
+  background-color: #faf0ca;
   animation-name: hide_loader;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -609,7 +609,7 @@ body {
 .loader .cup__bubble {
   width: 15px;
   height: 15px;
-  background-color: #9356DC;
+  background-color: #fbbe08;
   border-radius: 50%;
   position: absolute;
   opacity: 0;

@@ -21,7 +21,7 @@
     }
 
     h1, .intro {
-        width: 100vw;
+        width: 100%;
         text-align: center;
         padding: 0 10%;
     }
@@ -38,7 +38,7 @@
     .fonctionnement {
         @include flex;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         padding-left: $padding;
         padding-right: $padding;
         background-color: #fff;

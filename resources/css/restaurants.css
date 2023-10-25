@@ -1,9 +1,9 @@
 .highlight {
-  width: 100vw;
+  width: 100%;
 }
 
 .main {
-  width: 100vw;
+  width: 100%;
   background-color: #f6f6f6;
   border-radius: 20px 20px 0 0;
   position: relative;
