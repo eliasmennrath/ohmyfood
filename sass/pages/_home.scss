@@ -14,8 +14,6 @@
         &__input {
             border: none;
             background-color: inherit;
-
-            // Largeur de l'input pour centrer le text / Utiliser span éditable width:fit-content à la place ? 
             width: 150px;
         }
     }
@@ -81,7 +79,7 @@
                     background-color: #9356DC;
                 }
 
-                span {
+                div {
                     @include flex;
                     justify-content: center;
                     align-items: center;
